@@ -3,10 +3,10 @@ steps:
 
   - id: "Install"
     name: 'gcr.io/cloud-builders/go'
-    args: ['install', './go/src/webserver/bin']
+    args: ['install', './go/src/webserver']
     env: ["GOPATH=./go/src/webserver"]
 
   - id: "Executando testes"
     name: "gcr.io/cloud-builders/go"
-    args: ["test", "./go/src/webserver/bin"]
+    args: ["test", "./go/src/webserver"]
     env: ["GOPATH=./go/src/webserver"]
