@@ -4,13 +4,13 @@ steps:
   name: 'gcr.io/cloud-builders/go'
   args: ['install', '.']
   env: ['GOPATH=./workspace/3-desafio-go/src/app']
-  dir: "./src/app"
+  dir: "./workspace/3-desafio-go/src/app"
 
 - id: "Rodando testes"  
   name: 'gcr.io/cloud-builders/go'
   args: ['test', '.']
-  env: ["GOPATH=./src/app'"]
-  dir: "./src/app"
+  env: ['GOPATH=./workspace/3-desafio-go/src/app']
+  dir: "./workspace/3-desafio-go/src/app"
   
 - id: "Executando o script"
   name: "gcr.io/cloud-builders/go"
