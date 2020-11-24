@@ -9,5 +9,5 @@ steps:
 
   - id: "Executando testes"
     name: "gcr.io/cloud-builders/go"
-    args: ["test", "webserver"]
-    env: ["GOPATH=./go"]
+    args: ["test", "."]
+    env: ["GOPATH=./go/src/webserver"]
