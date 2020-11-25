@@ -10,11 +10,6 @@ steps:
   args: ['test', 'webserver']
   env: ["GOPATH=./3-desafio-go"]
   
-- id: "Executando o script"
-  name: "gcr.io/cloud-builders/go"
-  args: ["run", "webserver"]
-  env: ["GOPATH=./3-desafio-go"]
-  
 - id: "Build e push"  
   name: 'gcr.io/cloud-builders/docker'
   args: ['build', '--tag=gcr.io/$PROJECT_ID/app', '.']
