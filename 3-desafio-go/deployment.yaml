@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: webserver-go
-        image: osniantonio/webserver-go
+        image: osniantonio/utilizando-k8s
         ports:
         - containerPort: 8000
