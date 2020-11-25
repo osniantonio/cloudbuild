@@ -11,7 +11,7 @@ steps:
   env: ["GOPATH=./3-desafio-go"]
   
 - id: "Build e push"  
-  name: 'gcr.io/cloud-builders/go'
-  args: ['build', '--tag=gcr.io/$PROJECT_ID/app', '.']
+  name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '--tag=gcr.io/$PROJECT_ID/app', './3-desafio-go']
   
 images: ['gcr.io/$PROJECT_ID/app']
