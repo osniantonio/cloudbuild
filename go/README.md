@@ -1,7 +1,7 @@
 # Kubernetes e hpa
 
 ## URL da imagem publicada no docker hub
-<a href="https://hub.docker.com/r/osniantonio/go-hpa" target="_blank">https://hub.docker.com/r/osniantonio/go-hpa</a>
+https://hub.docker.com/r/osniantonio/go-hpa
 
 ## Comando usado para criar a imagem
 docker build -t osniantonio/go-hpa .
