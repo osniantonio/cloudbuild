@@ -3,8 +3,8 @@ kind: HorizontalPodAutoscaler
 metadata:
   name: go-hap
 spec:
-  maxReplicas: 6
   minReplicas: 1
+  maxReplicas: 6
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
