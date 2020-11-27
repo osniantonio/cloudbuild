@@ -17,3 +17,5 @@ Quantidade máxima de pods: 6
 Formato de Entrega:
 Crie um repositório no github contendo tanto o projeto em Go (com pelo menos uma PR verificada através do processo de CI), 
 bem como os arquivos yamls necessários para executar todo o processo.
+
+URL do serviço: http://34.121.106.215/
