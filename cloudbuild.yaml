@@ -1,17 +1,10 @@
 steps:
+  - id: "Run install"
+    name: "gcr.io/cloud-builders/go"
+    args: ["install", "hpa"]
+    env: ["GOPATH=./go"]
 
-- id: "Instalando"
-  name: 'gcr.io/cloud-builders/go'
-  args: ['install', 'webserver']
-  env: ["GOPATH=./3-desafio-go"]
-
-- id: "Rodando os testes"  
-  name: 'gcr.io/cloud-builders/go'
-  args: ['test', 'webserver']
-  env: ["GOPATH=./3-desafio-go"]
-  
-- id: "Build e push"  
-  name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '--tag=gcr.io/$PROJECT_ID/app', './3-desafio-go']
-  
-images: ['gcr.io/$PROJECT_ID/app']
+  - id: "Run test"
+    name: "gcr.io/cloud-builders/go"
+    args: ["test", "hpa"]
+    env: ["GOPATH=./go"]

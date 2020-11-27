@@ -1,12 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: webserver-go-service
-  
+  name: go-hpa-service
 spec:
   type: LoadBalancer
   selector:
-    app: webserver-go
+    app: go-hpa
   ports:
   - port: 80
     targetPort: 8000
